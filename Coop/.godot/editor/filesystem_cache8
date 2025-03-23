@@ -1,0 +1,39 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1742717625
+icon.svg::CompressedTexture2D::7194282548467435255::1739322322::1742710004::1::::<><>::
+::res://assets/::1742710877
+mains.png::CompressedTexture2D::5812114949413092835::1742706982::1742710877::1::::<><>::
+::res://assets/fond/::1742710879
+fond arrière plan-01.png::CompressedTexture2D::6450983475368775307::1742710433::1742710879::1::::<><>::
+fond arrière plan-02.png::CompressedTexture2D::7096287259258261433::1742706798::1742710879::1::::<><>::
+fond arrière plan-03.png::CompressedTexture2D::5212513657789178856::1742706806::1742710879::1::::<><>::
+fond permier plan-01.png::CompressedTexture2D::8709613258176731502::1742706808::1742710878::1::::<><>::
+fond permier plan-02.png::CompressedTexture2D::3021256154436260389::1742706809::1742710878::1::::<><>::
+fond permier plan-03.png::CompressedTexture2D::3150572172129500287::1742706793::1742710878::1::::<><>::
+::res://assets/singe/::1742710878
+singe debout 1.png::CompressedTexture2D::4396092677602211210::1742706982::1742710878::1::::<><>::
+singe debout 2.png::CompressedTexture2D::2217977729317216720::1742706982::1742710878::1::::<><>::
+singe frappe arme.png::CompressedTexture2D::6644967844267749267::1742706982::1742710878::1::::<><>::
+singe frappe poing.png::CompressedTexture2D::5681942013611134009::1742706982::1742710878::1::::<><>::
+singe marche 1.png::CompressedTexture2D::5745560323470817225::1742706982::1742710878::1::::<><>::
+singe marche 2.png::CompressedTexture2D::7665792472753327917::1742706982::1742710878::1::::<><>::
+singe saut 1.png::CompressedTexture2D::1812237110304315714::1742706982::1742710878::1::::<><>::
+singe saut 2.png::CompressedTexture2D::4738742961336967445::1742706982::1742710877::1::::<><>::
+::res://assets/zombie/::1742710877
+zombie 1.png::CompressedTexture2D::7333195455802732406::1742706982::1742710877::1::::<><>::
+zombie 2.png::CompressedTexture2D::6820110448002859564::1742706982::1742710877::1::::<><>::
+zombie 3.png::CompressedTexture2D::3840413980493648239::1742706982::1742710877::1::::<><>::
+zombie 4.png::CompressedTexture2D::7180273443963768931::1742706982::1742710877::1::::<><>::
+zombie 5.png::CompressedTexture2D::2595283412002474585::1742706982::1742710877::1::::<><>::
+zombie 6.png::CompressedTexture2D::5143653744151184792::1742706982::1742710877::1::::<><>::
+::res://scene/::1742717455
+coin.tscn::PackedScene::3039362502502597954::1742704366::0::1::::<><>::uid://cu1te6q8gjg37::::res://assets/sprites/player-idle.png<>res://script/coin.gd
+enemie.tscn::PackedScene::8128031082397803471::1742651066::0::1::::<><>::uid://bxofkk1kfcoy3::::res://ennemie/crab-walk.png<>uid://sc4cd7hhk0k1::::res://ennemie/enemie.gd<>uid://cckhsxicdn06a::::res://ennemie/crab-idle.png
+Game.tscn::PackedScene::5810147315822953385::1742717455::0::1::::<><>::uid://b1wynikrny635::::res://scene/player.tscn<>res://script/player.gd<>uid://n8chlr0dxdld::::res://scene/killzone.tscn<>uid://dwdab75udoxhe::::res://assets/fond/fond permier plan-01.png<>uid://cx550xf3qtugx::::res://assets/fond/fond arrière plan-01.png<>uid://c8dq2xomteyeb::::res://assets/fond/fond arrière plan-02.png<>uid://bjbrwapqdvcw0::::res://assets/fond/fond permier plan-02.png<>uid://bk5fp0wk3qvx4::::res://assets/fond/fond permier plan-03.png<>uid://cgi8lrf6n53p1::::res://assets/fond/fond arrière plan-03.png
+killzone.tscn::PackedScene::980713972880589901::1742704366::0::1::::<><>::res://script/killzone.gd
+player.tscn::PackedScene::4258227788444016898::1742717455::0::1::::<><>::uid://b3vrae1bvcwja::::res://assets/singe/singe debout 1.png<>uid://6un1feyrj6dw::::res://assets/singe/singe debout 2.png<>uid://cn4gslgokldph::::res://assets/singe/singe marche 1.png<>uid://024jsgieok4q::::res://assets/singe/singe saut 1.png<>uid://dhhmqnidlscw0::::res://assets/singe/singe marche 2.png<>uid://b8rqn0kaywrir::::res://assets/singe/singe saut 2.png
+::res://script/::1742710969
+coin.gd::GDScript::-1::1742645357::0::1::::<>Area2D<>::
+enemie.gd::GDScript::-1::1742650104::0::1::::<>CharacterBody2D<>::
+killzone.gd::GDScript::-1::1742648077::0::1::::<>Area2D<>::
+player.gd::GDScript::-1::1742704346::0::1::::<>CharacterBody2D<>::
