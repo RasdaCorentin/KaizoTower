@@ -1,0 +1,5 @@
+res://Level5/Leve5.tscn
+res://player/player.tscn
+res://player/player.gd
+res://ennemie/enemie.tscn
+res://ennemie/enemie.gd

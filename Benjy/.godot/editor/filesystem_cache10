@@ -1,0 +1,16 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1742652585
+icon.svg::CompressedTexture2D/CompressedTexture2D::7194282548467435255::1739333122::1742651500::1::::<><><>0<>0<>f5f7688ed1a2eed244e4fdaeaba04b5e<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://ennemie/::1742652866
+crab-idle.png::CompressedTexture2D::4934321215933427418::1499530856::1742652870::1::::<><><>0<>0<>b096fbd48d36a59798828939b6da2e5e<>res://.godot/imported/crab-idle.png-b4ddefd7c0b7e06ecd468a9e6da4a3ca.ctex::
+crab-walk.png::CompressedTexture2D::4029987384687111844::1499530928::1742652870::1::::<><><>0<>0<>c810882bee358a7899a8540d2c9ecc58<>res://.godot/imported/crab-walk.png-5577122609dc42b6450730a7ec95dbfb.ctex::
+enemie.tscn::PackedScene::8128031082397803471::1742652601::0::1::::<><><>0<>0<><>::
+::res://Level5/::1742652538
+Leve5.tscn::PackedScene/PackedScene::668713727016936563::1742652538::0::1::::<><><>0<>0<><>::uid://bgkob5fh7d6ri::::res://Tileset/tilesets.png<>uid://bw2r3rwa4rv2p::::res://player/player.tscn
+::res://player/::1742652566
+player-idle.png::CompressedTexture2D::6231454482239060152::1739334638::1742652566::1::::<><><>0<>0<>f06119a9affcc76bb7c4eb12c22dff06<>res://.godot/imported/player-idle.png-9087397bfef4682835c46ace0b229ec5.ctex::
+player-run-shoot.png::CompressedTexture2D/CompressedTexture2D::3202768249971640559::1739334790::1742652563::1::::<><><>0<>0<>e5cf262192c37051d9a4fc649dcbf3c5<>res://.godot/imported/player-run-shoot.png-c9a7715623dcd6bd85ee8243bfab80ca.ctex::
+player.gd::GDScript/GDScript::885831257823235749::1742652538::0::1::::<>CharacterBody2D<><>0<>0<><>::
+player.tscn::PackedScene::3987396561117891153::1742652565::0::1::::<><><>0<>0<><>::uid://mvdrnf4i05af::::res://player/player.gd<>uid://cu1te6q8gjg37::::res://player/player-idle.png<>uid://blvpeiw1c8tnb::::res://player/player-run-shoot.png
+::res://Tileset/::1742651500
+tilesets.png::CompressedTexture2D/CompressedTexture2D::2829050930540019966::1739333400::1742651500::1::::<><><>0<>0<>7f4568a69f58381dad2f563faa18dffd<>res://.godot/imported/tilesets.png-c4b6a456769fb6eb9361a8235b70f157.ctex::
