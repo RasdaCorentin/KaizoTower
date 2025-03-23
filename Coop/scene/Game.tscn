@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://co1qjoxwjiki8"]
+[gd_scene load_steps=21 format=3 uid="uid://co1qjoxwjiki8"]
 
 [ext_resource type="PackedScene" uid="uid://b1wynikrny635" path="res://scene/player.tscn" id="1_ke7rx"]
 [ext_resource type="Script" path="res://script/player.gd" id="4_8n4ng"]
@@ -9,6 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://bjbrwapqdvcw0" path="res://assets/fond/fond permier plan-02.png" id="5_8dxxi"]
 [ext_resource type="Texture2D" uid="uid://bk5fp0wk3qvx4" path="res://assets/fond/fond permier plan-03.png" id="6_pcxu7"]
 [ext_resource type="Texture2D" uid="uid://cgi8lrf6n53p1" path="res://assets/fond/fond arrière plan-03.png" id="6_rskpd"]
+[ext_resource type="PackedScene" uid="uid://dn2jqp8emnb8b" path="res://scene/zombie.tscn" id="10_s3j0p"]
+[ext_resource type="PackedScene" uid="uid://5e3bdim6jpcu" path="res://scene/Horde.tscn" id="11_4kbdw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qnohd"]
 texture = ExtResource("4_xgth4")
@@ -13863,10 +13865,18 @@ position = Vector2(15, 935)
 shape = SubResource("WorldBoundaryShape2D_cq55c")
 
 [node name="Player" parent="." instance=ExtResource("1_ke7rx")]
-position = Vector2(84, -370)
+position = Vector2(434, -302)
+scale = Vector2(0.7, 0.7)
 script = ExtResource("4_8n4ng")
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2(-1, -175)
-zoom = Vector2(0.25, 0.25)
+position = Vector2(41.4286, -491.429)
+zoom = Vector2(0.3, 0.3)
 limit_left = -1700
+
+[node name="Zombiz" parent="." instance=ExtResource("10_s3j0p")]
+position = Vector2(1323, -582)
+
+[node name="Mains" parent="." instance=ExtResource("11_4kbdw")]
+position = Vector2(-1206, -795)
+scale = Vector2(1, 1.21852)

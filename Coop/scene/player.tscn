@@ -1,6 +1,7 @@
-[gd_scene load_steps=22 format=3 uid="uid://b1wynikrny635"]
+[gd_scene load_steps=24 format=3 uid="uid://b1wynikrny635"]
 
 [ext_resource type="Texture2D" uid="uid://b3vrae1bvcwja" path="res://assets/singe/singe debout 1.png" id="1_f0qy4"]
+[ext_resource type="Texture2D" uid="uid://cm7m0wtr5iopd" path="res://assets/singe/singe frappe poing.png" id="1_fngl1"]
 [ext_resource type="Texture2D" uid="uid://6un1feyrj6dw" path="res://assets/singe/singe debout 2.png" id="2_gjlkm"]
 [ext_resource type="Texture2D" uid="uid://cn4gslgokldph" path="res://assets/singe/singe marche 1.png" id="3_xtu2f"]
 [ext_resource type="Texture2D" uid="uid://024jsgieok4q" path="res://assets/singe/singe saut 1.png" id="4_aqgy0"]
@@ -34,6 +35,10 @@ func _physics_process(delta: float) -> void:
 
 	move_and_slide()
 "
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tccvu"]
+atlas = ExtResource("1_fngl1")
+region = Rect2(585, 520, 445, 520)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_v2rap"]
 atlas = ExtResource("1_f0qy4")
@@ -85,6 +90,14 @@ region = Rect2(556, 530, 500, 500)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_c8jem"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tccvu")
+}],
+"loop": true,
+"name": &"coup",
+"speed": 10.0
+}, {
 "frames": [],
 "loop": true,
 "name": &"default",
@@ -138,11 +151,12 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2da3s"]
-radius = 155.0
-height = 646.0
+radius = 73.0
+height = 490.0
 
 [node name="Player" type="CharacterBody2D"]
-collision_layer = 2
+collision_layer = 6
+collision_mask = 5
 script = SubResource("GDScript_tgfot")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -150,8 +164,9 @@ z_index = 5
 position = Vector2(75, -140)
 scale = Vector2(1.5103, 1.60152)
 sprite_frames = SubResource("SpriteFrames_c8jem")
-animation = &"run"
+animation = &"coup"
 autoplay = "idle"
+frame_progress = 0.457537
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

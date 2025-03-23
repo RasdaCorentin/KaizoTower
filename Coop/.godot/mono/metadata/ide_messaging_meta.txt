@@ -1,0 +1,2 @@
+﻿43721
+/usr/bin/Godot_v4.3-stable_mono_linux.x86_64

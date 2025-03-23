@@ -1,4 +1,10 @@
 res://scene/Game.tscn
-res://scene/player.tscn
 res://script/player.gd
-res://scene/enemie.tscn
+res://scene/zombie.tscn
+res://scene/player.tscn
+res://script/killzone.gd
+res://scene/killzone.tscn
+res://Horde.tscn
+res://scene/Horde.tscn
+res://scene/horde.gd
+res://script/zombie.gd
