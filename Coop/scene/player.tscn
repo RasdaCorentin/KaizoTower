@@ -1,40 +1,13 @@
-[gd_scene load_steps=24 format=3 uid="uid://b1wynikrny635"]
+[gd_scene load_steps=25 format=3 uid="uid://b1wynikrny635"]
 
 [ext_resource type="Texture2D" uid="uid://b3vrae1bvcwja" path="res://assets/singe/singe debout 1.png" id="1_f0qy4"]
 [ext_resource type="Texture2D" uid="uid://cm7m0wtr5iopd" path="res://assets/singe/singe frappe poing.png" id="1_fngl1"]
+[ext_resource type="Script" path="res://script/player.gd" id="1_ognbu"]
 [ext_resource type="Texture2D" uid="uid://6un1feyrj6dw" path="res://assets/singe/singe debout 2.png" id="2_gjlkm"]
 [ext_resource type="Texture2D" uid="uid://cn4gslgokldph" path="res://assets/singe/singe marche 1.png" id="3_xtu2f"]
 [ext_resource type="Texture2D" uid="uid://024jsgieok4q" path="res://assets/singe/singe saut 1.png" id="4_aqgy0"]
 [ext_resource type="Texture2D" uid="uid://dhhmqnidlscw0" path="res://assets/singe/singe marche 2.png" id="5_8vsoc"]
 [ext_resource type="Texture2D" uid="uid://b8rqn0kaywrir" path="res://assets/singe/singe saut 2.png" id="6_st7fy"]
-
-[sub_resource type="GDScript" id="GDScript_tgfot"]
-script/source = "extends CharacterBody2D
-
-
-const SPEED = 300.0
-const JUMP_VELOCITY = -400.0
-
-
-func _physics_process(delta: float) -> void:
-	# Add the gravity.
-	if not is_on_floor():
-		velocity += get_gravity() * delta
-
-	# Handle jump.
-	if Input.is_action_just_pressed(\"ui_accept\") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
-
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
-	var direction := Input.get_axis(\"ui_left\", \"ui_right\")
-	if direction:
-		velocity.x = direction * SPEED
-	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
-
-	move_and_slide()
-"
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tccvu"]
 atlas = ExtResource("1_fngl1")
@@ -152,12 +125,18 @@ animations = [{
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2da3s"]
 radius = 73.0
-height = 490.0
+height = 634.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i3rtm"]
+size = Vector2(100, 50)
 
 [node name="Player" type="CharacterBody2D"]
+position = Vector2(2, 0)
+disable_mode = 2
 collision_layer = 6
 collision_mask = 5
-script = SubResource("GDScript_tgfot")
+collision_priority = 2.0
+script = ExtResource("1_ognbu")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 z_index = 5
@@ -171,4 +150,15 @@ flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(75, -140)
+scale = Vector2(1, 1)
 shape = SubResource("CapsuleShape2D_2da3s")
+
+[node name="AttackArea" type="Area2D" parent="."]
+position = Vector2(75, -140)
+scale = Vector2(1, 1)
+
+[node name="CollisionShape2" type="CollisionShape2D" parent="AttackArea"]
+position = Vector2(120, 0)
+shape = SubResource("RectangleShape2D_i3rtm")
+
+[connection signal="body_entered" from="AttackArea" to="." method="_on_attack_area_body_entered"]
