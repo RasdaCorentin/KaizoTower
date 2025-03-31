@@ -4,12 +4,12 @@
 [ext_resource type="PackedScene" uid="uid://n8chlr0dxdld" path="res://scene/killzone.tscn" id="2_x4uc0"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yfvls"]
-radius = 228.0
+radius = 182.884
 height = 1054.55
 
 [node name="Mains" type="Sprite2D"]
-z_index = 5
-scale = Vector2(1, 1.1)
+position = Vector2(-161, 0)
+scale = Vector2(1.50312, 1.1)
 texture = ExtResource("1_ero7b")
 offset = Vector2(0, 50)
 hframes = 3
@@ -19,5 +19,5 @@ collision_layer = 4
 collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
-position = Vector2(-102, 46.3636)
+position = Vector2(-127, 38.1818)
 shape = SubResource("CapsuleShape2D_yfvls")

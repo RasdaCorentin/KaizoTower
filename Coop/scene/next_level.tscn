@@ -1,0 +1,44 @@
+[gd_scene load_steps=6 format=3 uid="uid://63ioopcat5s6"]
+
+[ext_resource type="Script" path="res://scene/next_level.gd" id="1_s2dlb"]
+[ext_resource type="Texture2D" uid="uid://4kjj743xnd4n" path="res://assets/New Piskel(1).png" id="1_v4tlw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g6qtm"]
+atlas = ExtResource("1_v4tlw")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1sv8s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g6qtm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g6qtm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g6qtm")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0edrs"]
+height = 34.0
+
+[node name="Next Level" type="Area2D"]
+scale = Vector2(12.9943, 9.49717)
+script = ExtResource("1_s2dlb")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_1sv8s")
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = -1.5708
+shape = SubResource("CapsuleShape2D_0edrs")
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
