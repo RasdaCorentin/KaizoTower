@@ -1,26 +1,23 @@
 extends CharacterBody2D
 @onready var animated_sprite_2d =$AnimatedSprite2D
 @onready var collision_shape_2d: CollisionShape2D = $CollisionShape2D
-@onready var raycast = $RayCast2D
 
 
-@export var patrol_point : Node
-@export var player : CharacterBody2D
-
-var number_of_Points : int
-var health = 3
+var health = randi_range(3,6)
 var is_dead = false
 const SPEED = 20000
 const Chase_SPEED= 20200
+const BUMP_TIMER = 0.2
 const GRAVITY = 1000
-
+#Ajout Corentin : But: Bump
+var attacked = false
+var toucher = 1.0
+var bump_timer = 0.0
 # Variables d'ennemi
 enum State { Idle , Walk , Chase }
 var direction = Vector2.LEFT
 var current_state : State
-var point_positions : Array[Vector2] = []  # Assurez-vous que ce tableau est initialisé
-var current_point_position : int = 0
-var current_point : Vector2
+
 
 # Fonction pour configurer les patrouilles
 func _ready():
@@ -28,39 +25,27 @@ func _ready():
 		return
 		
 	add_to_group("enemies")
-	if patrol_point != null:
-		# Vérification si le nœud de patrouille contient des enfants
-		number_of_Points = patrol_point.get_children().size()
-		if number_of_Points > 0:
-			# Ajouter les positions des enfants (points de patrouille) dans le tableau
-			for point in patrol_point.get_children():
-				point_positions.append(point.global_position)
-			current_point = point_positions[current_point_position]
-		else:
-			print("Pas de points de patrouille définis dans le nœud patrol_point")
-	else:
-		print("Le nœud 'patrol_point' n'est pas assigné")
+		# Vérification si le nœud de patrouille contient des enfant
 		
 	current_state = State.Idle
 
 # Fonction pour faire patrouiller l'ennemi
 func _process(delta):
 	# Vérifier que les points de patrouille existent avant d'essayer de les utiliser
-	if point_positions.size() > 0:
-		enemy_idle(delta)
 		enemy_run(delta)
 		enemy_fall(delta)
 		
+		if attacked : 
+			bump_timer -= delta
+			enemy_idle(delta)
+			toucher += 0.01
+			position.x -= -2500 * delta
+			position.y -= 10
+			if bump_timer <= 0:
+				attacked = false
+			move_and_slide()	
 		move_and_slide()
 		animated_enemy(delta)
-		
-func  look_for_player():
-	if raycast.is_colliding():
-		var collider = raycast.get_collider()
-		if collider == player:
-			chase_player()
-		elif current_state == State.Chase:
-			pass
 			
 func chase_player():
 	current_state = State.Chase
@@ -69,28 +54,10 @@ func chase_player():
 
 	
 func enemy_run(delta : float):
-	if abs(position.x - current_point.x) > 0.5:
-		velocity.x = direction.x * SPEED * delta
+		velocity.x = direction.x * SPEED * delta * toucher
+			
 		current_state = State.Walk
-	else :
-		current_point_position += 1
-		
-		# Vérification de la taille du tableau avant de tenter d'y accéder
-		if current_point_position >= point_positions.size():
-			current_point_position = 0  # Réinitialiser à 0 (recommencer depuis le premier point)
-		
-		current_point = point_positions[current_point_position]
-	
-	# Déterminer la direction selon la position du point de patrouille
-	if current_point.x > position.x : 
-		direction = Vector2.RIGHT
-		raycast.target_position = Vector2(125,0)
-	else:
 		direction = Vector2.LEFT
-		raycast.target_position = Vector2(-125,0)
-		
-		
-	animated_sprite_2d.flip_h = direction.x > 0
 	
 func enemy_fall(delta):
 	velocity.y += GRAVITY * delta
@@ -104,6 +71,10 @@ func take_damage(amount: int = 1) -> void:
 	if is_dead:
 		return
 	health -= amount
+	bump_timer = BUMP_TIMER
+	attacked = true
+	#Le joueur n'est pas le collisionneur (WTF???) 
+	#Move and slide est lié à la vélocité 
 	if health <= 0:
 		die()
 

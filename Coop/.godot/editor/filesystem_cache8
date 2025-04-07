@@ -1,8 +1,9 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1742792815
+::res://::1744034164
 icon.svg::CompressedTexture2D::7194282548467435255::1739322322::1742710004::1::::<><>::
-::res://assets/::1742710877
+::res://assets/::1743955983
 mains.png::CompressedTexture2D::5812114949413092835::1742706982::1742710877::1::::<><>::
+New Piskel(1).png::CompressedTexture2D::2056684494973554827::1743955891::1743955983::1::::<><>::
 ::res://assets/fond/::1742710879
 fond arrière plan-01.png::CompressedTexture2D::6450983475368775307::1742710433::1742710879::1::::<><>::
 fond arrière plan-02.png::CompressedTexture2D::7096287259258261433::1742706798::1742710879::1::::<><>::
@@ -26,15 +27,21 @@ zombie 3.png::CompressedTexture2D::3840413980493648239::1742706982::1742710877::
 zombie 4.png::CompressedTexture2D::7180273443963768931::1742706982::1742710877::1::::<><>::
 zombie 5.png::CompressedTexture2D::2595283412002474585::1742706982::1742710877::1::::<><>::
 zombie 6.png::CompressedTexture2D::5143653744151184792::1742706982::1742710877::1::::<><>::
-::res://scene/::1742793015
-Game.tscn::PackedScene::5810147315822953385::1742793001::0::1::::<><>::uid://b1wynikrny635::::res://scene/player.tscn<>uid://n8chlr0dxdld::::res://scene/killzone.tscn<>uid://dwdab75udoxhe::::res://assets/fond/fond permier plan-01.png<>uid://cx550xf3qtugx::::res://assets/fond/fond arrière plan-01.png<>uid://c8dq2xomteyeb::::res://assets/fond/fond arrière plan-02.png<>uid://bjbrwapqdvcw0::::res://assets/fond/fond permier plan-02.png<>uid://bk5fp0wk3qvx4::::res://assets/fond/fond permier plan-03.png<>uid://cgi8lrf6n53p1::::res://assets/fond/fond arrière plan-03.png<>uid://dn2jqp8emnb8b::::res://scene/zombie.tscn<>uid://5e3bdim6jpcu::::res://scene/Horde.tscn<>res://script/Horde.gd
-Horde.tscn::PackedScene::2115624852264084940::1742792954::0::1::::<><>::uid://co2oxi1e7br2b::::res://assets/mains.png<>uid://n8chlr0dxdld::::res://scene/killzone.tscn
+::res://scene/::1744031040
+EndGame.tscn::PackedScene::8959358845156173397::1743955891::0::1::::<><>::
+Game.tscn::PackedScene::5810147315822953385::1744031040::0::1::::<><>::uid://b1wynikrny635::::res://scene/player.tscn<>res://script/player.gd<>uid://n8chlr0dxdld::::res://scene/killzone.tscn<>uid://dwdab75udoxhe::::res://assets/fond/fond permier plan-01.png<>uid://cx550xf3qtugx::::res://assets/fond/fond arrière plan-01.png<>uid://c8dq2xomteyeb::::res://assets/fond/fond arrière plan-02.png<>uid://bjbrwapqdvcw0::::res://assets/fond/fond permier plan-02.png<>uid://bk5fp0wk3qvx4::::res://assets/fond/fond permier plan-03.png<>uid://cgi8lrf6n53p1::::res://assets/fond/fond arrière plan-03.png<>uid://dn2jqp8emnb8b::::res://scene/zombie.tscn<>uid://5e3bdim6jpcu::::res://scene/Horde.tscn<>res://script/horde.gd
+Horde.tscn::PackedScene::2115624852264084940::1744002554::0::1::::<><>::uid://co2oxi1e7br2b::::res://assets/mains.png<>uid://n8chlr0dxdld::::res://scene/killzone.tscn
 killzone.tscn::PackedScene::980713972880589901::1742736961::0::1::::<><>::res://script/killzone.gd
-player.tscn::PackedScene::4258227788444016898::1742793015::0::1::::<><>::uid://b3vrae1bvcwja::::res://assets/singe/singe debout 1.png<>uid://cm7m0wtr5iopd::::res://assets/singe/singe frappe poing.png<>uid://6un1feyrj6dw::::res://assets/singe/singe debout 2.png<>uid://cn4gslgokldph::::res://assets/singe/singe marche 1.png<>uid://024jsgieok4q::::res://assets/singe/singe saut 1.png<>uid://dhhmqnidlscw0::::res://assets/singe/singe marche 2.png<>uid://b8rqn0kaywrir::::res://assets/singe/singe saut 2.png
-player.gd::GDScript::-1::1742793177::0::1::::<>CharacterBody2D<>::
-zombie.tscn::PackedScene::8128031082397803471::1742792954::0::1::::<><>::res://script/zombie.gd<>uid://cfjvhw4xstffc::::res://assets/zombie/zombie 6.png<>uid://dcqiwmm0po3ta::::res://assets/zombie/zombie 1.png<>uid://bc8f66bry8s6l::::res://assets/zombie/zombie 5.png
-::res://script/::1742792814
+next_level.gd::GDScript::-1::1743955891::0::1::::<>Area2D<>::
+next_level.tscn::PackedScene::2234168225540099091::1743955891::0::1::::<><>::res://scene/next_level.gd<>uid://4kjj743xnd4n::::res://assets/New Piskel(1).png
+player.tscn::PackedScene::4258227788444016898::1744031040::0::1::::<><>::uid://b3vrae1bvcwja::::res://assets/singe/singe debout 1.png<>uid://cm7m0wtr5iopd::::res://assets/singe/singe frappe poing.png<>uid://6un1feyrj6dw::::res://assets/singe/singe debout 2.png<>uid://cn4gslgokldph::::res://assets/singe/singe marche 1.png<>uid://024jsgieok4q::::res://assets/singe/singe saut 1.png<>uid://dhhmqnidlscw0::::res://assets/singe/singe marche 2.png<>uid://b8rqn0kaywrir::::res://assets/singe/singe saut 2.png
+Title_screen.tscn::PackedScene::2530393357942801366::1743955891::0::1::::<><>::res://script/title_screen.gd
+zombie.tscn::PackedScene::8128031082397803471::1744031040::0::1::::<><>::res://script/zombie.gd<>uid://cfjvhw4xstffc::::res://assets/zombie/zombie 6.png<>uid://dcqiwmm0po3ta::::res://assets/zombie/zombie 1.png<>uid://bc8f66bry8s6l::::res://assets/zombie/zombie 5.png
+::res://script/::1744030992
 coin.gd::GDScript::-1::1742645357::0::1::::<>Area2D<>::
 Horde.gd::GDScript::-1::1742789276::0::1::::<>CharacterBody2D<>::
-killzone.gd::GDScript::-1::1742789886::0::1::::<>Area2D<>::
-zombie.gd::GDScript::-1::1742791584::0::1::::<>CharacterBody2D<>::
+horde.gd::GDScript::-1::1743955891::0::1::::<>CharacterBody2D<>::
+killzone.gd::GDScript::-1::1743955891::0::1::::<>Area2D<>::
+player.gd::GDScript::-1::1744030709::0::1::::<>CharacterBody2D<>::
+title_screen.gd::GDScript::-1::1743955891::0::1::::<>Control<>::
+zombie.gd::GDScript::-1::1744030992::0::1::::<>CharacterBody2D<>::

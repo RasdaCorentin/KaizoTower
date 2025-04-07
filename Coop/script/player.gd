@@ -3,6 +3,7 @@ extends CharacterBody2D
 @onready var attack_area: Area2D = $AttackArea
 @onready var collision_shape_2d: CollisionShape2D = $CollisionShape2D
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
+
 var energy = 100
 var max_energy = 100
 const SPEED = 500.0
@@ -15,6 +16,7 @@ var attack_timer = 0.0
 
 func _ready():
 	$AttackArea.monitoring = false
+	set_energy_bar()
 
 func _physics_process(delta: float) -> void:
 	#Récupération d'énergie 
@@ -55,13 +57,16 @@ func _physics_process(delta: float) -> void:
 		animated_sprite_2d.play("coup")
 		velocity.x += direction * ATTACK_SPEED
 		energy -= 10
-		move_and_slide()
+		set_energy_bar()
 		await animated_sprite_2d.animation_finished
 		$AttackArea.monitoring = false
 		return
+	set_energy_bar()
 	move_and_slide() 
 
 func _on_attack_area_body_entered(body: Node2D) -> void:
 	if attacking and body.has_method("take_damage"):
-		print("hit")
 		body.take_damage()
+
+func set_energy_bar() -> void:
+	$EnergyBar.value = energy

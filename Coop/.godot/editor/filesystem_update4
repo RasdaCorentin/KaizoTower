@@ -1,8 +1,5 @@
 res://scene/Game.tscn
 res://script/zombie.gd
-res://scene/Horde.tscn
-res://scene/player.tscn
 res://scene/zombie.tscn
-res://scene/character_body_2d.gd
-res://script/killzone.gd
+res://scene/player.tscn
 res://script/player.gd
