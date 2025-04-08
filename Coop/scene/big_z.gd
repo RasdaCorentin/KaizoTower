@@ -3,7 +3,7 @@ extends CharacterBody2D
 @onready var collision_shape_2d: CollisionShape2D = $CollisionShape2D
 
 
-var health = randi_range(3,6)
+var health = 11
 var is_dead = false
 const SPEED = 20000
 const Chase_SPEED= 20200
@@ -25,7 +25,7 @@ func _ready():
 		return
 		
 	add_to_group("enemies")
-	# Vérification si le nœud de patrouille contient des enfant
+		# Vérification si le nœud de patrouille contient des enfant
 		
 	current_state = State.Idle
 
@@ -38,8 +38,8 @@ func _process(delta):
 		if attacked : 
 			bump_timer -= delta
 			enemy_idle(delta)
-			toucher += 0.03
-			position.x -= -2500 * delta
+			toucher += 0.01
+			position.x -= -1500 * delta
 			position.y -= 10
 			if bump_timer <= 0:
 				attacked = false

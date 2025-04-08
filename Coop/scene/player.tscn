@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://b1wynikrny635"]
+[gd_scene load_steps=26 format=3 uid="uid://b1wynikrny635"]
 
 [ext_resource type="Texture2D" uid="uid://b3vrae1bvcwja" path="res://assets/singe/singe debout 1.png" id="1_f0qy4"]
 [ext_resource type="Texture2D" uid="uid://cm7m0wtr5iopd" path="res://assets/singe/singe frappe poing.png" id="1_fngl1"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://024jsgieok4q" path="res://assets/singe/singe saut 1.png" id="4_aqgy0"]
 [ext_resource type="Texture2D" uid="uid://dhhmqnidlscw0" path="res://assets/singe/singe marche 2.png" id="5_8vsoc"]
 [ext_resource type="Texture2D" uid="uid://b8rqn0kaywrir" path="res://assets/singe/singe saut 2.png" id="6_st7fy"]
+[ext_resource type="Script" path="res://scene/attack_area.gd" id="8_4shy3"]
 
 [sub_resource type="GDScript" id="GDScript_tgfot"]
 script/source = "extends CharacterBody2D
@@ -185,6 +186,7 @@ shape = SubResource("CapsuleShape2D_2da3s")
 [node name="AttackArea" type="Area2D" parent="."]
 position = Vector2(161, -140)
 collision_layer = 3
+script = ExtResource("8_4shy3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AttackArea"]
 position = Vector2(42, 0)
