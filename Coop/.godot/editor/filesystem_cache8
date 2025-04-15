@@ -1,16 +1,22 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1744089560
+::res://::1744643717
 icon.svg::CompressedTexture2D::7194282548467435255::1739322322::1742710004::1::::<><>::
-::res://assets/::1743955983
+::res://assets/::1744644215
+arme.png::CompressedTexture2D::4304620717920965230::1744644148::1744644221::1::::<><>::
 mains.png::CompressedTexture2D::5812114949413092835::1742706982::1742710877::1::::<><>::
 New Piskel(1).png::CompressedTexture2D::2056684494973554827::1743955891::1743955983::1::::<><>::
-::res://assets/fond/::1742710879
+Pupitre.png::CompressedTexture2D::6624574392070123551::1744643573::1744643624::1::::<><>::
+tete de mort.png::CompressedTexture2D::7133026468358641279::1744644153::1744644220::1::::<><>::
+::res://assets/fond/::1744643717
 fond arrière plan-01.png::CompressedTexture2D::6450983475368775307::1742710433::1742710879::1::::<><>::
 fond arrière plan-02.png::CompressedTexture2D::7096287259258261433::1742706798::1742710879::1::::<><>::
 fond arrière plan-03.png::CompressedTexture2D::5212513657789178856::1742706806::1742710879::1::::<><>::
 fond permier plan-01.png::CompressedTexture2D::8709613258176731502::1742706808::1742710878::1::::<><>::
 fond permier plan-02.png::CompressedTexture2D::3021256154436260389::1742706809::1742710878::1::::<><>::
 fond permier plan-03.png::CompressedTexture2D::3150572172129500287::1742706793::1742710878::1::::<><>::
+::res://assets/livre/::1744643718
+Livre fermé.png::CompressedTexture2D::4431243133937533013::1744643552::1744643718::1::::<><>::
+Livre ouvert.png::CompressedTexture2D::6449177226865344492::1744643563::1744643718::1::::<><>::
 ::res://assets/singe/::1742710878
 singe debout 1.png::CompressedTexture2D::4396092677602211210::1742706982::1742710878::1::::<><>::
 singe debout 2.png::CompressedTexture2D::2217977729317216720::1742706982::1742710878::1::::<><>::
@@ -20,6 +26,12 @@ singe marche 1.png::CompressedTexture2D::5745560323470817225::1742706982::174271
 singe marche 2.png::CompressedTexture2D::7665792472753327917::1742706982::1742710878::1::::<><>::
 singe saut 1.png::CompressedTexture2D::1812237110304315714::1742706982::1742710878::1::::<><>::
 singe saut 2.png::CompressedTexture2D::4738742961336967445::1742706982::1742710877::1::::<><>::
+::res://assets/trophee/::1744643704
+Trophée 1.png::CompressedTexture2D::3730403756224681408::1744643413::1744643704::1::::<><>::
+Trophée 2.png::CompressedTexture2D::6137516780227629124::1744643407::1744643703::1::::<><>::
+Trophée 3.png::CompressedTexture2D::5491362944619660319::1744643402::1744643703::1::::<><>::
+Trophée 4.png::CompressedTexture2D::7669094257347831480::1744643394::1744643704::1::::<><>::
+Trophée 6.png::CompressedTexture2D::8131927905150563534::1744643379::1744643704::1::::<><>::
 ::res://assets/zombie/::1742710877
 zombie 1.png::CompressedTexture2D::7333195455802732406::1742706982::1742710877::1::::<><>::
 zombie 2.png::CompressedTexture2D::6820110448002859564::1742706982::1742710877::1::::<><>::
@@ -27,24 +39,24 @@ zombie 3.png::CompressedTexture2D::3840413980493648239::1742706982::1742710877::
 zombie 4.png::CompressedTexture2D::7180273443963768931::1742706982::1742710877::1::::<><>::
 zombie 5.png::CompressedTexture2D::2595283412002474585::1742706982::1742710877::1::::<><>::
 zombie 6.png::CompressedTexture2D::5143653744151184792::1742706982::1742710877::1::::<><>::
-::res://scene/::1744089503
+::res://scene/::1744643325
 attack_area.gd::GDScript::-1::1744087466::0::1::::<>Area2D<>::
 BigZ.tscn::PackedScene::5419805807337536924::1744089337::0::1::::<><>::uid://dn2jqp8emnb8b::::res://scene/zombie.tscn
 big_z.gd::GDScript::-1::1744088790::0::1::::<>CharacterBody2D<>::
 EndGame.tscn::PackedScene::8959358845156173397::1743955891::0::1::::<><>::
-Game.tscn::PackedScene::5810147315822953385::1744089503::0::1::::<><>::uid://b1wynikrny635::::res://scene/player.tscn<>res://script/player.gd<>uid://n8chlr0dxdld::::res://scene/killzone.tscn<>uid://dwdab75udoxhe::::res://assets/fond/fond permier plan-01.png<>uid://cx550xf3qtugx::::res://assets/fond/fond arrière plan-01.png<>uid://c8dq2xomteyeb::::res://assets/fond/fond arrière plan-02.png<>uid://bjbrwapqdvcw0::::res://assets/fond/fond permier plan-02.png<>uid://bk5fp0wk3qvx4::::res://assets/fond/fond permier plan-03.png<>uid://cgi8lrf6n53p1::::res://assets/fond/fond arrière plan-03.png<>uid://dn2jqp8emnb8b::::res://scene/zombie.tscn<>uid://5e3bdim6jpcu::::res://scene/Horde.tscn<>res://script/horde.gd
+Game.tscn::PackedScene::5810147315822953385::1744643325::0::1::::<><>::uid://b1wynikrny635::::res://scene/player.tscn<>res://script/player.gd<>uid://n8chlr0dxdld::::res://scene/killzone.tscn<>uid://dwdab75udoxhe::::res://assets/fond/fond permier plan-01.png<>uid://cx550xf3qtugx::::res://assets/fond/fond arrière plan-01.png<>uid://c8dq2xomteyeb::::res://assets/fond/fond arrière plan-02.png<>uid://bjbrwapqdvcw0::::res://assets/fond/fond permier plan-02.png<>uid://bk5fp0wk3qvx4::::res://assets/fond/fond permier plan-03.png<>uid://cgi8lrf6n53p1::::res://assets/fond/fond arrière plan-03.png<>uid://dn2jqp8emnb8b::::res://scene/zombie.tscn<>uid://5e3bdim6jpcu::::res://scene/Horde.tscn<>res://script/horde.gd
 Horde.tscn::PackedScene::2115624852264084940::1744002554::0::1::::<><>::uid://co2oxi1e7br2b::::res://assets/mains.png<>uid://n8chlr0dxdld::::res://scene/killzone.tscn
 killzone.tscn::PackedScene::980713972880589901::1742736961::0::1::::<><>::res://script/killzone.gd
 next_level.gd::GDScript::-1::1743955891::0::1::::<>Area2D<>::
 next_level.tscn::PackedScene::2234168225540099091::1743955891::0::1::::<><>::res://scene/next_level.gd<>uid://4kjj743xnd4n::::res://assets/New Piskel(1).png
-player.tscn::PackedScene::4258227788444016898::1744089503::0::1::::<><>::uid://b3vrae1bvcwja::::res://assets/singe/singe debout 1.png<>uid://cm7m0wtr5iopd::::res://assets/singe/singe frappe poing.png<>uid://6un1feyrj6dw::::res://assets/singe/singe debout 2.png<>uid://cn4gslgokldph::::res://assets/singe/singe marche 1.png<>uid://024jsgieok4q::::res://assets/singe/singe saut 1.png<>uid://dhhmqnidlscw0::::res://assets/singe/singe marche 2.png<>uid://b8rqn0kaywrir::::res://assets/singe/singe saut 2.png
+player.tscn::PackedScene::4258227788444016898::1744643094::0::1::::<><>::uid://b3vrae1bvcwja::::res://assets/singe/singe debout 1.png<>uid://cm7m0wtr5iopd::::res://assets/singe/singe frappe poing.png<>uid://6un1feyrj6dw::::res://assets/singe/singe debout 2.png<>uid://cn4gslgokldph::::res://assets/singe/singe marche 1.png<>uid://024jsgieok4q::::res://assets/singe/singe saut 1.png<>uid://dhhmqnidlscw0::::res://assets/singe/singe marche 2.png<>uid://b8rqn0kaywrir::::res://assets/singe/singe saut 2.png<>res://scene/attack_area.gd
 Title_screen.tscn::PackedScene::2530393357942801366::1743955891::0::1::::<><>::res://script/title_screen.gd
-zombie.tscn::PackedScene::8128031082397803471::1744089503::0::1::::<><>::res://script/zombie.gd<>uid://cfjvhw4xstffc::::res://assets/zombie/zombie 6.png<>uid://dcqiwmm0po3ta::::res://assets/zombie/zombie 1.png<>uid://bc8f66bry8s6l::::res://assets/zombie/zombie 5.png
-::res://script/::1744089503
+zombie.tscn::PackedScene::8128031082397803471::1744643094::0::1::::<><>::res://script/zombie.gd<>uid://cfjvhw4xstffc::::res://assets/zombie/zombie 6.png<>uid://dcqiwmm0po3ta::::res://assets/zombie/zombie 1.png<>uid://bc8f66bry8s6l::::res://assets/zombie/zombie 5.png
+::res://script/::1744640868
 coin.gd::GDScript::-1::1742645357::0::1::::<>Area2D<>::
 Horde.gd::GDScript::-1::1742789276::0::1::::<>CharacterBody2D<>::
 horde.gd::GDScript::-1::1743955891::0::1::::<>CharacterBody2D<>::
 killzone.gd::GDScript::-1::1743955891::0::1::::<>Area2D<>::
 player.gd::GDScript::-1::1744089503::0::1::::<>CharacterBody2D<>::
 title_screen.gd::GDScript::-1::1743955891::0::1::::<>Control<>::
-zombie.gd::GDScript::-1::1744089503::0::1::::<>CharacterBody2D<>::
+zombie.gd::GDScript::-1::1744640868::0::1::::<>CharacterBody2D<>::

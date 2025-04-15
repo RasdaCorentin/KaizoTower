@@ -1,9 +1,9 @@
 extends CharacterBody2D
 @onready var animated_sprite_2d =$AnimatedSprite2D
 @onready var collision_shape_2d: CollisionShape2D = $CollisionShape2D
+@onready var player : CharacterBody2D = $"../Player"  
 
-
-var health = randi_range(3,6)
+var health = 6
 var is_dead = false
 const SPEED = 20000
 const Chase_SPEED= 20200
@@ -80,6 +80,7 @@ func take_damage(amount: int = 1) -> void:
 
 func die() -> void:
 	is_dead = true
+	player.energy += 20
 	collision_shape_2d.set_deferred("disabled", true)
 	# Attendre un peu avant de supprimer le node (le temps de jouer l'anim par exemple)
 	await animated_sprite_2d.animation_finished

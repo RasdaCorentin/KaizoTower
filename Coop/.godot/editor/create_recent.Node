@@ -1,3 +1,4 @@
+TileMap
 ProgressBar
 ColorRect
 Node2D
@@ -9,6 +10,5 @@ PathFollow2D
 Sprite2D
 VisibleOnScreenNotifier2D
 Camera2D
-TileMap
 TileMapLayer
 Skeleton2D
