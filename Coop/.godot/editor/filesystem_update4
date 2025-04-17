@@ -1,4 +1,1 @@
-res://scene/Game.tscn
-res://script/zombie.gd
-res://scene/zombie.tscn
-res://scene/player.tscn
+res://script/player.gd

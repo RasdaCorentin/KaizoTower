@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://lw5jkrtf11kq"]
+
+[ext_resource type="Texture2D" uid="uid://c1m81i4op7l1p" path="res://assets/Pupitre.png" id="1_j1nwa"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dbl34"]
+radius = 28.0
+height = 206.0
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(6, -233)
+shape = SubResource("CapsuleShape2D_dbl34")
+
+[node name="Pupitre" type="Sprite2D" parent="CollisionShape2D"]
+position = Vector2(-673, -158)
+texture = ExtResource("1_j1nwa")

@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://dpst3phhh80bb"]
+
+[ext_resource type="PackedScene" uid="uid://lw5jkrtf11kq" path="res://scene/Support.tscn" id="1_ueuyw"]
+[ext_resource type="Texture2D" uid="uid://b4er6ru61wurt" path="res://assets/livre/Livreferme.png" id="2_k1lpw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j0a41"]
+size = Vector2(107.429, 166.807)
+
+[node name="trphy" type="Node2D"]
+
+[node name="Support" parent="." instance=ExtResource("1_ueuyw")]
+position = Vector2(229, 458)
+scale = Vector2(1.5, 1.5)
+collision_layer = 512
+collision_mask = 512
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="LivreFerme" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(386, -26)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_k1lpw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(237.8, -228.765)
+scale = Vector2(1.4, 1.4)
+shape = SubResource("RectangleShape2D_j0a41")
