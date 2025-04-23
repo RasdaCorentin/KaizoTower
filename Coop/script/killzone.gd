@@ -6,4 +6,11 @@ func _on_body_entered(body: Node2D) -> void:
 	timer.start()
 
 func _on_timer_timeout() -> void:
+	GameData.level = 1
+	GameData.horde = 1
+	GameData.money = 0
+	GameData.health = 6
+	GameData.toucher = 0.04 
+	GameData.dmg = 1
+	GameData.speed_boost = 1.0
 	get_tree().reload_current_scene() # Replace with function body.

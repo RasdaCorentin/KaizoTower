@@ -3,7 +3,7 @@ extends CharacterBody2D
 @onready var collision_shape_2d: CollisionShape2D = $CollisionShape2D
 @onready var player : CharacterBody2D = $"../Player"  
 
-var health = 6
+var health = GameData.health
 var is_dead = false
 const SPEED = 20000
 const Chase_SPEED= 20200
@@ -38,7 +38,7 @@ func _process(delta):
 		if attacked : 
 			bump_timer -= delta
 			enemy_idle(delta)
-			toucher += 0.03
+			toucher += GameData.toucher
 			position.x -= -2500 * delta
 			position.y -= 10
 			if bump_timer <= 0:
@@ -67,19 +67,19 @@ func  enemy_idle(delta):
 	current_state = State.Idle
 	
 
-func take_damage(amount: int = 1) -> void:
+func take_damage(amount) -> void:
 	if is_dead:
 		return
 	health -= amount
 	bump_timer = BUMP_TIMER
 	attacked = true
-	#Le joueur n'est pas le collisionneur (WTF???) 
 	#Move and slide est lié à la vélocité 
 	if health <= 0:
 		die()
 
 func die() -> void:
 	is_dead = true
+	GameData.money += 1
 	player.energy += 20
 	collision_shape_2d.set_deferred("disabled", true)
 	# Attendre un peu avant de supprimer le node (le temps de jouer l'anim par exemple)
