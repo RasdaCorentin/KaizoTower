@@ -1,1 +1,13 @@
+res://scene/Game.tscn
+res://script/zombie.gd
 res://script/player.gd
+res://scene/zombie.tscn
+res://scene/player.tscn
+res://scene/Horde.tscn
+res://scene/Support.tscn
+res://scene/trphy.tscn
+res://scene/boost.tscn
+res://scene/killzone.tscn
+res://script/Game_data.gd
+res://script/horde.gd
+res://script/killzone.gd
