@@ -1,0 +1,64 @@
+[gd_scene load_steps=4 format=3 uid="uid://urip6dr7uobr"]
+
+[ext_resource type="Script" path="res://script/death_screen.gd" id="1_sl7my"]
+[ext_resource type="Texture2D" uid="uid://cv3ra4ujj1ur3" path="res://assets/Logo/KAIZO_DEATH.png" id="2_2dr2g"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vtjha"]
+bg_color = Color(0.0701524, 0.0701524, 0.0701524, 1)
+
+[node name="Death_screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 247.0
+offset_top = 288.0
+offset_right = 247.0
+offset_bottom = 288.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_sl7my")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -267.0
+offset_top = -299.0
+offset_right = -238.0
+offset_bottom = -274.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_vtjha")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -214.0
+offset_top = -252.0
+offset_right = 378.0
+offset_bottom = -100.0
+texture = ExtResource("2_2dr2g")
+expand_mode = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+offset_right = 40.0
+
+[node name="VBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Retry" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "RETRY"
+
+[node name="Give Up" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "GIVE UP"
+icon_alignment = 2
+vertical_icon_alignment = 2
+expand_icon = true
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Retry" to="." method="_on_retry_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Give Up" to="." method="_on_give_up_pressed"]

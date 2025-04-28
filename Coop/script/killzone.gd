@@ -13,4 +13,4 @@ func _on_timer_timeout() -> void:
 	GameData.toucher = 0.04 
 	GameData.dmg = 1
 	GameData.speed_boost = 1.0
-	get_tree().reload_current_scene() # Replace with function body.
+	get_tree().change_scene_to_file("res://scene/death_screen.tscn") # Replace with function body.

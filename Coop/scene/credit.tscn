@@ -1,0 +1,75 @@
+[gd_scene load_steps=4 format=3 uid="uid://fmonr5bfx8te"]
+
+[ext_resource type="Script" path="res://script/credit.gd" id="1_ixrio"]
+
+[sub_resource type="Theme" id="Theme_kpuqw"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fv6fu"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="Credit" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 240.0
+offset_top = 319.0
+offset_right = 240.0
+offset_bottom = 319.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ixrio")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 2
+offset_left = -243.0
+offset_top = -319.0
+offset_right = 392.0
+offset_bottom = 64.0
+theme = SubResource("Theme_kpuqw")
+theme_override_styles/panel = SubResource("StyleBoxFlat_fv6fu")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = -229.0
+offset_top = -311.0
+offset_right = 401.0
+offset_bottom = -7.0
+bbcode_enabled = true
+text = "												    THANK FOR PLAYING
+
+
+Credit : 
+
+Game Design
+LEBON Benjy & RASDA Corentin
+
+Sound Design
+LEBON Benjy
+
+Level Design
+RASDA Corentin
+
+Graphismes
+Emilie Porte
+
+Remerciements spéciaux : 
+
+LEBON BENOIT (LE SANG )  , DUBANT Christopher (present a la création du projet )  , MONSIEUR  LOIC MANGLOU (Pour les conseille &  retour en Alpha Testing) 
+
+Et surtout un grand merci a vous qui jouer 
+"
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "QUIT TO TITLE "
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]

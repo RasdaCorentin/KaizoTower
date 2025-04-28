@@ -2,6 +2,7 @@ extends CharacterBody2D
 @onready var animated_sprite_2d =$AnimatedSprite2D
 @onready var collision_shape_2d: CollisionShape2D = $CollisionShape2D
 @onready var player : CharacterBody2D = $"../Player"  
+@onready var hit_sound = $AudioStreamPlayer2D
 
 var health = GameData.health
 var is_dead = false
@@ -73,6 +74,7 @@ func take_damage(amount) -> void:
 	health -= amount
 	bump_timer = BUMP_TIMER
 	attacked = true
+	hit_sound.play()
 	#Move and slide est lié à la vélocité 
 	if health <= 0:
 		die()
