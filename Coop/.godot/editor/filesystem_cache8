@@ -1,8 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1745846508
+::res://::1745847513
 export_presets.cfg::TextFile::-1::1745844046::0::1::::<><>::
 icon.svg::CompressedTexture2D::7194282548467435255::1745452010::1745845865::1::::<><>::
-::res://assets/::1745846483
+::res://assets/::1745846915
 arme.png::CompressedTexture2D::4304620717920965230::1745452010::1745845865::1::::<><>::
 mains.png::CompressedTexture2D::5812114949413092835::1745452010::1745845866::1::::<><>::
 New Piskel(1).png::CompressedTexture2D::2056684494973554827::1745452010::1745845865::1::::<><>::
@@ -12,7 +12,7 @@ tete de mort.png::CompressedTexture2D::7133026468358641279::1745452010::17458458
 aouil.wav::AudioStreamWAV::9144737683441122767::1744643800::1745845867::1::::<><>::
 Torture.mp3::AudioStreamMP3::2627441554968055744::1744642364::1745845865::1::::<><>::
 Torture.wav::AudioStreamWAV::7673402351646785121::1744644488::1745845867::1::::<><>::
-::res://assets/fond/::1745846483
+::res://assets/fond/::1745846915
 controlou.png::CompressedTexture2D::3245472233483335751::1745588496::1745845866::1::::<><>::
 fond arrière plan-01.png::CompressedTexture2D::6450983475368775307::1745452010::1745845866::1::::<><>::
 fond arrière plan-02.png::CompressedTexture2D::7096287259258261433::1745452010::1745845866::1::::<><>::
@@ -21,13 +21,13 @@ fond permier plan-01.png::CompressedTexture2D::8709613258176731502::1745452010::
 fond permier plan-02.png::CompressedTexture2D::3021256154436260389::1745452010::1745845866::1::::<><>::
 fond permier plan-03.png::CompressedTexture2D::3150572172129500287::1745452010::1745845866::1::::<><>::
 fondecrantitre.png::CompressedTexture2D::7317764388916069248::1745585782::1745845866::1::::<><>::
-::res://assets/livre/::1745846483
+::res://assets/livre/::1745846915
 Livreferme.png::CompressedTexture2D::4431243133937533013::1745452010::1745845866::1::::<><>::
 Livreouvert.png::CompressedTexture2D::6449177226865344492::1745452010::1745845866::1::::<><>::
 ::res://assets/Logo/::1745845866
 KAIZO_DEATH.png::CompressedTexture2D::6305643404270819758::1745840790::1745845866::1::::<><>::
 KAIZO_LOGO(1).png::CompressedTexture2D::6370398199971763080::1745840654::1745845866::1::::<><>::
-::res://assets/singe/::1745846483
+::res://assets/singe/::1745846915
 singe debout 1.png::CompressedTexture2D::4396092677602211210::1745452010::1745845866::1::::<><>::
 singe debout 2.png::CompressedTexture2D::2217977729317216720::1745452010::1745845866::1::::<><>::
 singe frappe arme.png::CompressedTexture2D::6644967844267749267::1745452010::1745845866::1::::<><>::
@@ -36,20 +36,20 @@ singe marche 1.png::CompressedTexture2D::5745560323470817225::1745452010::174584
 singe marche 2.png::CompressedTexture2D::7665792472753327917::1745452010::1745845866::1::::<><>::
 singe saut 1.png::CompressedTexture2D::1812237110304315714::1745452010::1745845865::1::::<><>::
 singe saut 2.png::CompressedTexture2D::4738742961336967445::1745452010::1745845865::1::::<><>::
-::res://assets/trophee/::1745846483
+::res://assets/trophee/::1745846915
 Trophe1.png::CompressedTexture2D::3730403756224681408::1745452010::1745845865::1::::<><>::
 Trophe2.png::CompressedTexture2D::6137516780227629124::1745452010::1745845865::1::::<><>::
 Trophe3.png::CompressedTexture2D::5491362944619660319::1745452010::1745845865::1::::<><>::
 Trophe4.png::CompressedTexture2D::7669094257347831480::1745452010::1745845865::1::::<><>::
 Trophe6.png::CompressedTexture2D::8131927905150563534::1745452010::1745845865::1::::<><>::
-::res://assets/zombie/::1745846483
+::res://assets/zombie/::1745846915
 zombie 1.png::CompressedTexture2D::7333195455802732406::1745452010::1745845865::1::::<><>::
 zombie 2.png::CompressedTexture2D::6820110448002859564::1745452010::1745845865::1::::<><>::
 zombie 3.png::CompressedTexture2D::3840413980493648239::1745452010::1745845865::1::::<><>::
 zombie 4.png::CompressedTexture2D::7180273443963768931::1745452010::1745845865::1::::<><>::
 zombie 5.png::CompressedTexture2D::2595283412002474585::1745452010::1745845865::1::::<><>::
 zombie 6.png::CompressedTexture2D::5143653744151184792::1745452010::1745845865::1::::<><>::
-::res://scene/::1745846483
+::res://scene/::1745846915
 BigZ.tscn::PackedScene::5419805807337536924::1745452010::0::1::::<><>::uid://dn2jqp8emnb8b::::res://scene/zombie.tscn
 boost.tscn::PackedScene::8250457929307376159::1745845879::0::1::::<><>::uid://lw5jkrtf11kq::::res://scene/Support.tscn<>uid://b4er6ru61wurt::::res://assets/livre/Livreferme.png
 control.tscn::PackedScene::3464296412038376765::1745845879::0::1::::<><>::res://script/control.gd<>uid://bmiepoi82x7fv::::res://assets/fond/controlou.png
@@ -67,7 +67,7 @@ Support.tscn::PackedScene::819331724901992844::1745845879::0::1::::<><>::uid://c
 Title_screen.tscn::PackedScene::2530393357942801366::1745845879::0::1::::<><>::res://script/title_screen.gd<>uid://dci1rl7wwiwjw::::res://assets/fond/fondecrantitre.png<>uid://cw04r663tjn57::::res://assets/Logo/KAIZO_LOGO(1).png
 trphy.tscn::PackedScene::8693685269102667094::1745845879::0::1::::<><>::uid://lw5jkrtf11kq::::res://scene/Support.tscn<>uid://dn4fwuf3mc4y1::::res://assets/trophee/Trophe6.png
 zombie.tscn::PackedScene::8128031082397803471::1745845879::0::1::::<><>::res://script/zombie.gd<>uid://cfjvhw4xstffc::::res://assets/zombie/zombie 6.png<>uid://dcqiwmm0po3ta::::res://assets/zombie/zombie 1.png<>uid://bc8f66bry8s6l::::res://assets/zombie/zombie 5.png<>uid://d3j1q1t2idnv0::::res://assets/Effect/aouil.wav
-::res://script/::1745846483
+::res://script/::1745846915
 attack_area.gd::GDScript::-1::1745452010::0::1::::<>Area2D<>::
 big_z.gd::GDScript::-1::1745452010::0::1::::<>CharacterBody2D<>::
 coin.gd::GDScript::-1::1745452010::0::1::::<>Area2D<>::
